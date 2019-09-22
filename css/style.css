@@ -1,0 +1,2097 @@
+body{
+
+	padding: 0;
+	margin: 0;
+	background: #fff;
+	font-family:'Roboto', sans-serif;
+    font-size: 15px;
+    background-color: #f5f5f5;
+    color: #616161;
+}
+
+
+/*==============================================================================
+CSS CODE FOR HEADER SECTION
+================================================================================*/
+
+
+/***************************************
+CSS CODE FOR NAVIGATION SECTION
+*****************************************/
+.thumbnail-image{
+
+ position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 156px;
+    background: #06A763;
+}
+.thumbnail-image img{
+
+    height: 60%;
+    width: 40%;
+    margin-left: 27%;
+    margin-top: 12%;
+
+}
+
+.sidebar{
+
+    position: fixed;
+    top: 0;
+    left: -250px;
+    background: #f5f5f5;
+    width: 250px;
+    height: 100%;
+    transition: .3s;
+    box-shadow: 0px 20px 20px rgba(0,0,0,0.4);
+    z-index: 10;
+}
+
+.sidebar i{
+
+    padding-right: 10px;
+    font-size: 14px;
+}
+.sidebar ul{
+
+    margin: 125px 0px;
+    padding: 45px 0px;
+}
+.sidebar ul li{
+
+    list-style: none;
+    padding: 1px 15px;
+}
+
+.sidebar ul li a{
+
+    margin-left: 30px;
+    margin-right: 30px;
+    color: #616161;
+    display: block;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.sidebar ul li a:hover{
+
+    color: #1976D2;
+}
+.sidebarbtn{
+
+    position: absolute;
+    top: 12px;
+    right: -50px;
+    height: 35px;
+    width: 35px;
+    cursor: pointer;
+    box-sizing: border-box;
+    background: #f5f5f5;
+    outline: none;
+   border: 1px solid rgba(93, 92, 92, 0.52);
+    
+}
+
+.sidebarbtn span{
+
+    display: block;
+    width: 22px;
+    height: 3px;
+    background: #1976D2;
+    position: absolute;
+    top: 15px;
+    transition: .3s;
+}
+
+.sidebarbtn span:before{
+
+    content: '';
+    position: absolute;
+    top: -7px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: #1976D2;
+    transition: .3s;
+}
+
+.sidebarbtn span:after{
+
+    content: '';
+    position: absolute;
+    top: 7px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: #1976D2;
+    transition: .3s;
+}
+
+.active{
+
+    left: 0;
+}
+
+
+.sidebarbtn.toggle span{
+
+    background: transparent;
+}
+
+.sidebarbtn.toggle span:before{
+
+    top: 0;
+    transform: rotate(45deg);
+}
+
+.sidebarbtn.toggle span:after{
+
+    top: 0;
+    transform: rotate(-45deg);
+}
+
+
+/*************************
+CSS CODE FOR BANNER
+****************************/
+
+@media(min-width: 1100px){
+
+
+
+
+.header-section{
+
+
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 370px;
+    background: url(../images/backgrounds/background.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+
+
+.protfolio-img-shap{
+
+
+    position: absolute;
+    width: 80%;
+    height: 400px;
+    background: red;
+    top: 140px;
+    left: 10%;
+    display: flex;
+    box-shadow: 0px 10px 10px rgba(0,0,0,.5);
+  
+}
+.social-media{
+
+    height: 400px;
+    width: 55%;
+    background: #06A763;
+    box-sizing: border-box;
+}
+.personal-image{
+
+    height: 400px;
+    width: 45%;
+   background: #b75954;
+    box-sizing: border-box;
+    border-left: 100px solid #06A763;
+    border-bottom: 400px solid transparent;
+   
+}
+
+.personal-image img{
+
+  /* height: 160px;
+    width: 150px;*/
+    height: 210px;
+    width: 200px;
+    border-radius: 50%;
+    margin-left: 18%;
+    margin-top: 27%
+    
+}
+
+
+.social-media {
+
+    padding: 20px 0px 14px 40px;
+}
+.social-media h2{
+
+     padding: 3px 12px 0px 20px;
+    color: #fff;
+    font-size: 22px;
+    font-size: bo;
+    font-weight: bold;
+}
+.social-media h5{
+
+    color: #fff;
+    padding: 6px 0px 11px 20px;
+}
+.social-media {}
+
+.contact-info{
+
+         padding: 10px 20px;
+}
+.contact-info ul{
+
+    padding: 0;
+    margin: 0;
+}
+.contact-info ul li{
+
+        list-style: none;
+     
+}
+.contact-info span{}
+.title{
+
+    display: block;
+    float: left;
+    color: #fff;
+    line-height: 26px;
+}
+.content{
+
+    display: block;
+    margin-left: 30px;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #fff;
+}
+
+.social-link{
+
+    padding: 25px 15px;
+}
+.social-link ul{
+
+     padding: 0;
+     margin: 0;
+}
+.social-link ul li{
+
+    list-style: none;
+    float: left;padding: 10px;
+}
+.social-link ul li a{}
+.social-link i{
+
+
+    height: 40px;
+    width: 40px;
+    /*background: red;*/
+    padding: 8px 11px 10px 10px;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 25px;
+
+}
+ 
+#facebook{
+    background: #3b5999;
+    padding: 10px 12px;
+}
+#twitter{
+
+    background: #55acee;
+    padding: 9px 9px;
+}
+#linkedin{
+
+    background: #0077B5;
+    padding: 7px 9px;
+
+}
+#instagram{
+
+    background: #e4405f;
+    padding: 8px 9px;
+}
+
+
+}/*END*/
+
+
+
+@media screen and (max-width: 1099px) and (min-width: 768px) {
+
+
+.header-section{
+
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 370px;
+    background: url(../images/backgrounds/background.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    
+}
+
+.protfolio-img-shap{
+
+
+    position: absolute;
+    width: 84%;
+    height: 400px;
+    background: red;
+    top: 140px;
+    left: 8%;
+    display: flex;
+  
+}
+.social-media{
+
+    height: 400px;
+    width: 45%;
+    background: #06A763;
+    box-sizing: border-box;
+}
+.personal-image{
+
+    height: 400px;
+    width: 55%;
+   background: #b75954;
+    box-sizing: border-box;
+    border-left: 100px solid #06A763;
+    border-bottom: 400px solid transparent;
+   
+}
+
+.personal-image img{
+
+   height: 180px;
+    width: 180px;
+    border-radius: 50%;
+    margin-left: 18%;
+    margin-top: 28%
+    
+}
+
+
+.social-media {
+
+    padding: 20px 0px 14px 40px;
+}
+.social-media h2{
+
+     padding: 3px 12px 0px 20px;
+    color: #fff;
+    font-size: 22px;
+    font-size: bo;
+    font-weight: bold;
+}
+.social-media h5{
+
+    color: #fff;
+    padding: 6px 0px 11px 20px;
+}
+.social-media {}
+
+.contact-info{
+
+         padding: 10px 20px;
+}
+.contact-info ul{
+
+    padding: 0;
+    margin: 0;
+}
+.contact-info ul li{
+
+        list-style: none;
+     
+}
+.contact-info span{}
+.title{
+
+    display: block;
+    float: left;
+    color: #fff;
+    line-height: 26px;
+}
+.content{
+
+    display: block;
+    margin-left: 30px;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #fff;
+}
+
+.social-link{
+
+         padding: 44px 0;
+}
+.social-link ul{
+
+     padding: 0;
+     margin: 0;
+}
+.social-link ul li{
+
+    list-style: none;
+    float: left;padding: 10px;
+}
+.social-link ul li a{}
+.social-link i{
+
+
+    height: 40px;
+    width: 40px;
+    /*background: red;*/
+    padding: 8px 11px 10px 10px;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 25px;
+
+}
+ 
+#facebook{
+    background: #3b5999;
+    padding: 10px 12px;
+}
+#twitter{
+
+        background: #55acee;
+    padding: 9px 9px;
+}
+#linkedin{
+
+    background: #0077B5;
+    padding: 7px 9px;
+
+}
+#instagram{
+
+    background: #e4405f;
+    padding: 7px 9px;
+}
+ 
+
+
+}/*=end=*/
+
+@media(max-width: 767px){
+
+
+.header-section{
+
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 300px;
+    background: url(../images/backgrounds/background.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    margin-bottom: -150px;
+}
+
+
+.profile-section{
+
+        position: absolute;
+        background: #06A763;
+        height: 550px;
+        width: 90%;
+        margin-left: 5%; 
+        top: 50%;
+
+
+}
+.protfolio-img-shap{
+
+    position: relative;
+  
+}
+
+
+
+.personal-image{
+
+    
+     position: absolute;
+     top: -70%;
+     left: 28%;
+     margin-bottom: 10%;
+}
+
+.personal-image img{
+
+   
+   height: 150px;
+    width: 150px;
+    border-radius: 50%;
+     text-align: center; 
+    margin: auto;
+    
+}
+
+
+.personal-image h2{
+
+   font-size: 20px;
+   text-align: center;
+   color: #fff;
+   font-weight: bold;
+    
+}
+
+.personal-image h5{
+
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    padding-bottom: 40px;
+    
+}
+
+ 
+
+
+.social-media {
+    
+    margin-top: 128px;
+}
+.social-media h2{
+
+   text-align: center;
+   color: #fff;
+   padding-top: 25px;
+      
+}
+.social-media h5{
+   
+text-align: center;
+color: #fff;
+padding-bottom: 20px;
+     
+     
+}
+ 
+
+.contact-info{
+
+    margin: 0 auto;
+    width: 80%;
+}
+.contact-info ul{
+
+    padding: 0;
+    margin: 0;
+}
+.contact-info ul li{
+
+        list-style: none;
+     
+}
+.contact-info span{}
+.title{
+
+    display: block;
+    float: left;
+    color: #fff;
+    line-height: 26px;
+}
+.content{
+
+    display: block;
+    margin-left: 30px;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #fff;
+}
+
+.social-link{
+
+              width: 80%;
+    margin-left: 10%;
+    margin-top: 10%;
+}
+.social-link ul{
+
+     padding: 0;
+     margin: 0;
+}
+.social-link ul li{
+
+    list-style: none;
+    float: left;padding: 10px;
+}
+.social-link ul li a{}
+.social-link i{
+
+
+        height: 40px;
+    width: 40px;
+     
+    padding: 8px 11px 10px 10px;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 25px;
+
+}
+ 
+#facebook{
+    background: #3b5999;
+    padding: 10px 12px;
+}
+#twitter{
+
+        background: #55acee;
+    padding: 9px 9px;
+}
+#linkedin{
+
+    background: #0077B5;
+    padding: 7px 9px;
+
+}
+#instagram{
+
+    background: #e4405f;
+    padding: 7px 9px;
+}
+ 
+
+
+}/*==end===*/
+
+
+
+
+/*=========================================================================
+CSS CODE FOR ABOUT SECTION
+===========================================================================*/
+
+/*========================================CSS CODE FOR ABOUT SECTION==================================================*/
+@media(min-width: 1100px){
+.about-section{
+
+    margin-top: 16%;
+    width: 80%;
+    margin-left: 10%;
+    background: #fff;
+    box-shadow: 15px 4px 18px rgba(0,0,0,0.5);
+    position: relative;
+   
+}
+.about{}
+.about-desc{
+
+    padding: 25px;
+    
+}
+.about-desc h2{
+
+     text-align: center;
+     font-size: 25px;
+     color: #757575;
+}
+.about-desc p{
+
+    font-size: 16px;
+    line-height: 27px;
+    padding: 30px 20px 80px;
+    border-bottom: 2px solid #ddd;
+    color: #757575;
+    text-align: justify;
+}
+.about-btn{
+
+    padding-bottom: 30px;
+}
+
+.about-btn a{
+ 
+  }
+
+
+
+#download{
+
+    float: right;
+    background: #06A763;
+    padding: 10px 10px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 14px;
+    text-decoration: none;
+
+  }
+#contact{
+
+    float: left;
+    padding: 10px 10px;
+    background: #06A763;
+    color: #fff;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+
+
+ 
+ 
+}/*end*/
+
+
+
+@media screen and (max-width: 1099px) and (min-width: 768px) {
+
+ .about-section{
+
+    margin-top: 16%;
+    width: 84%;
+    margin-left: 8%;
+    background: #fff;
+    box-shadow: 15px 4px 18px rgba(0,0,0,0.5);
+    position: relative;
+}
+.about{}
+.about-desc{
+
+    padding: 28px;
+    
+}
+.about-desc p{
+
+    font-size: 16px;
+    line-height: 27px;
+    padding: 26px;
+    border-bottom: 2px solid #ddd;
+    color: #757575;
+}
+.about-btn{
+
+    padding-bottom: 30px;
+}
+
+.about-btn a{
+
+         
+  }
+
+
+    #download{
+
+       float: right;
+        background: #06A763;
+        padding: 10px 10px;
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 14px;
+
+  }
+  #contact{
+
+    float: left;
+    padding: 10px 10px;
+    background: #06A763;
+    color: #fff;
+    font-size: 14px;
+    text-transform: uppercase;
+  }
+
+ 
+
+}/*end*/
+
+
+
+
+@media(max-width: 767px){
+
+
+    .about-section{
+    width: 90%;
+    margin-left: 5%;
+    background: #fff;
+    box-shadow: 15px 4px 18px rgba(0,0,0,0.5);
+    
+    margin-top: 500px;
+}
+ 
+.about{}
+.about-desc{
+
+    padding: 20px;
+    
+}
+.about-desc p{
+
+    font-size: 16px;
+    line-height: 27px;
+    padding: 18px;
+    border-bottom: 2px solid #ddd;
+    color: #757575;
+    text-align: justify;
+}
+.about-btn{
+
+    padding-bottom: 30px;
+}
+
+.about-btn a{
+
+         
+  }
+
+
+    #download{
+
+       float: right;
+        background: #06A763;
+        padding: 10px 10px;
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 14px;
+
+  }
+  #contact{
+
+    float: left;
+    padding: 10px 10px;
+    background: #06A763;
+    color: #fff;
+    font-size: 14px;
+    text-transform: uppercase;
+  }
+ 
+
+
+}/*end*/
+
+/*==========================================CSS CODE FOR ABOUT SECTION END================================================*/
+
+
+
+
+
+/*==================================================================================================================
+CSS CODE FOR SKILL SECTION START
+======================================================================================================================*/
+
+.skill-section{
+
+
+    position: relative;
+
+    z-index: -1;
+}
+.skill-bar{
+
+     background: #06A763;
+    width: 80%;
+    margin-left: 10%;
+    padding: 50px;
+    box-shadow: 10px 11px 13px rgba(0,0,0,.5);
+}
+
+
+.skill-bar h1{
+
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+    padding-bottom: 10px;
+    padding-top: 20px;
+
+}
+.skillbox{
+
+    padding: 10px 0px;
+}
+.skill-title{}
+.skill-title p{
+
+    color: #fff;
+}
+.skill-parcent{
+
+    float: right;
+    position: relative;
+    margin-top: -25px;
+}
+.skill-parcent p{
+
+    color: #fff;
+}
+.skill{
+
+     background: #156f2c;
+    width: 100%;
+    height: 4px;
+}
+.skill-level{
+
+    position: relative;
+    width: 100%;
+    background: #fff;
+    height: 4px;
+}
+
+.skill-padding-bottom{
+
+    padding-bottom: 40px;
+}
+
+
+ .skill-header{
+
+      text-align: center;
+       padding-bottom: 40px;
+}
+.skill-header h2{
+  
+
+    font-size: 25px;
+    color: #757575;
+     
+}
+
+
+.skill-header img{
+
+        height: 50px;
+        width: 50px;
+}
+ 
+
+@media screen and (max-width: 1099px) and (min-width: 768px) {
+
+          .skill-bar{
+
+            width: 84%;
+            margin-left: 8%;
+            
+        }
+
+}
+
+
+
+@media(max-width: 767px){
+
+
+.skill-bar{
+
+    width: 90%;
+    margin-left: 5%;  
+}
+
+
+
+.skill-header{
+
+      text-align: center;
+      padding-bottom: 40px;
+}
+.skill-header h2{
+
+    font-size: 25px;
+    color: #757575;
+}
+
+.skill-header img{
+
+    height: 50px;
+    width: 50px;
+}
+
+}
+/*====================================================================================================================
+CSS CODE FOR SKILL SECTION END
+==============================================================================================================*/
+
+
+
+
+/*====================================================================================================================
+CSS CODE FOR EDUCATION SECTION  START
+==============================================================================================================*/
+
+
+
+
+
+/*=============================================CSS CODE FOR EDUCATION SECTION======================================================*/
+
+
+/*css code for largest divice*/
+
+@media(min-width: 1100px){
+
+     .education-section{
+
+          width: 84%;
+          margin-left: 8%;
+          margin-bottom: 10%;
+     }
+    
+}
+
+
+
+@media screen and (max-width: 1099px) and (min-width: 768px) {
+
+      .education-section{
+
+          width: 90%;
+          margin-left: 5%;
+          margin-bottom: 12%;
+      }
+
+}
+
+
+
+@media(max-width: 767px){
+
+
+    .education-section{
+
+           width: 94%;
+           margin-left: 5%;
+           margin-bottom: 10%;
+    }
+}
+
+
+
+
+@media (min-width: 768px){
+
+
+.timeline{
+
+      max-width: 1200px;
+      background: #ddd;
+      margin: 40px auto;
+      position: relative;
+      z-index: -50;
+      
+}
+.timeline ul{
+
+    padding: 0;
+    margin: 0;
+}
+.timeline ul li{
+
+    list-style: none;
+    width: 50%;
+
+}
+
+
+.timeline ul li:nth-child(even){
+
+
+     float: right;
+
+
+
+    margin-top: 114px;
+    margin-bottom: -110px;
+
+
+}
+.timeline ul li:nth-child(odd){
+
+
+     float: left;
+     position: relative;
+}
+
+.timeline ul li:nth-child(odd):after{
+
+
+     float: left;
+     position: absolute;
+     content: '';
+     background: #06A763;
+     height: 100%;
+     width: 4px;
+     right: 0;
+     top: 0;
+     z-index: -1;
+}
+
+.timeline-body{
+
+    position: relative;
+    padding: 15px 5px;
+}
+
+.timeline ul li:nth-child(odd) .timeline-content{
+
+     border-left: 5px solid #1976D2;
+}
+
+.timeline ul li:nth-child(even) .timeline-content{
+
+    margin-left: 10%;
+     border-left: 5px solid #1976D2;
+}
+
+.timeline-content{
+
+    padding: 20px;
+    background: #f5f5f5;
+    margin: 20px;
+    width: 86%;
+    position: relative;
+    box-shadow: 3px 15px 20px rgba(0,0,0.3);
+
+}
+.timeline-content h2{
+
+      font-size: 20px;
+      color: #757575;
+}
+.timeline-content h3{
+
+         font-size: 16px;
+    color: #757575;
+}
+.timeline-content h4{
+
+         color: #757575;
+    font-size: 18px;
+}
+.timeline-content p{
+
+         font-size: 14px;
+         color: #757575;
+}
+.span{
+
+    position: absolute;
+    background: #06A763;
+    height: 40px;
+    width: 40px;
+    color: #fff;
+    border-radius: 50%;
+    font-weight: bold;
+    text-align: center;
+    padding: 6px 10px;
+    font-size: 22px;
+}
+.span span{}
+.indicator{
+
+     /*position: relative;*/
+}
+
+ 
+ 
+.timeline ul li:nth-child(even) .span{
+
+
+    top: 100px;
+    left: -22px;
+    position: absolute;
+}
+
+
+.timeline ul li:nth-child(odd) .span{
+
+
+    top: 50px;
+    right: -18px;
+    position: absolute;
+}
+
+
+
+ 
+
+.timeline ul li:nth-child(odd) .timeline-content:after{
+
+
+    position: absolute;
+    content: '';
+    right: -40px;
+    top: 31px;
+    background: #06A763;
+    height: 5px;
+    width: 100px;
+    z-index: -1;
+}
+
+
+.timeline ul li:nth-child(even) .timeline-content:after{
+
+
+    position: absolute;
+    content: '';
+    left: -48px;
+    top: 82px;
+    background: #06A763;
+    height: 5px;
+    width: 100px;
+    z-index: -1;
+}
+
+.fa-graduation-cap{}
+
+.education-title{
+
+    text-align: center;
+    
+}
+
+.education-title h2{
+
+    font-size: 25px;
+    color: #757575;
+}
+
+
+.education-title img{
+
+    height: 50px;
+    width: 50px;
+}
+ 
+          
+
+}/*END*/
+
+/******************************************** 
+
+CSS CODE FOR SMALL DIVICE
+********************************************/
+
+@media (max-width: 767px){
+
+     
+   
+     
+.timeline{
+
+      max-width: 1200px;
+     /* background: #ddd;*/
+      margin: 10px auto;
+      position: relative;
+      z-index: -50;
+      
+}
+.timeline ul{
+
+    padding: 0;
+    margin: 0;
+}
+.timeline ul li{
+
+    list-style: none;
+    
+
+}
+
+
+ 
+
+ 
+
+.timeline-body{
+
+    position: relative;
+    
+}
+
+.timeline ul li .timeline-content{
+
+     
+     border-left: 5px solid #1976D2;
+}
+
+.timeline-content{
+
+    padding: 20px;
+    background: #f5f5f5;
+    margin: 20px;
+    width: 86%;
+    position: relative;
+    box-shadow: 3px 15px 20px rgba(0,0,0.3);
+
+}
+.timeline-content h2{
+
+      font-size: 20px;
+      color: #757575;
+}
+.timeline-content h3{
+
+         font-size: 16px;
+    color: #757575;
+}
+.timeline-content h4{
+
+         color: #757575;
+    font-size: 18px;
+}
+.timeline-content p{
+
+         font-size: 14px;
+         color: #757575;
+}
+.span{
+
+    display: none;
+}
+.span span{}
+.indicator{
+
+     
+}
+
+
+.education-title{
+
+    text-align: center;
+    
+}
+
+.education-title h2{
+
+    font-size: 25px;
+    color: #757575;
+}
+
+.education-title img{
+
+    height: 50px;
+    width: 50px;
+}
+
+ 
+}/*END*/
+
+/*=============================================//CSS CODE FOR EDUCATION SECTION======================================================*/
+
+
+
+
+/*====================================================================================================================
+CSS CODE FOR EDUCATION SECTION  END
+==============================================================================================================*/
+
+
+
+
+
+/*=====================================================CSS CODE FOR INTEREST SECTION=============================================*/
+
+
+
+.interest-header{
+
+    text-align: center;
+    padding-bottom: 40px;
+    padding-top: 90px;
+}
+.interest-header img{
+
+     height: 50px;
+     width: 50px;
+}
+.interest-header h2{
+
+    font-size: 25px;
+    color: #757575;
+}
+
+
+
+@media(min-width: 1100px){
+
+
+   .interest-section{
+
+       width: 80%;
+       margin-left: 10%;
+   }
+}
+
+
+
+@media screen and (max-width: 1099px) and (min-width: 768px) {
+
+  .interest-section{
+       width: 84%;
+       margin-left: 8%;
+   }
+}
+
+
+@media (min-width: 767px){
+
+ 
+
+ .interest-body{
+
+    text-align: center;
+    background: #fff;
+     
+ }
+
+ .gaming{
+
+     padding: 40px 78px;
+     background: #06A763;
+
+ }
+ .gaming i{
+
+         font-size: 2.2em;
+         color: #fff;
+         position: relative;
+ }
+ .gaming i:after{
+
+            position: absolute;
+            content: 'Gaming';
+            left: -20px;
+            top: 30px;
+            font-size: 20px;
+ }
+ .photography{
+
+     padding: 40px 78px;
+ }
+ .photography i{
+
+     font-size: 2.2em;
+     color: #06A763;
+     position: relative;
+ }
+ .photography i:after{
+
+     position: absolute;
+     content: 'Photography';
+     left: -25px;
+     top: 30px;
+     font-size: 20px;
+ }
+ .travel{
+
+     padding: 40px 78px;
+     background: #06A763;
+ }
+ .travel i{
+
+         font-size: 2.2em;
+         color: #fff;
+         position: relative;
+ }
+ .travel i:after{
+
+          position: absolute;
+     content: 'Travel';
+     left: -13px;
+     top: 30px;
+     font-size: 20px;
+ }
+ .cyclling{
+
+     padding: 40px 78px;
+ }
+ .cyclling i{
+
+    font-size: 2.2em;
+    color: #06A763;
+    position: relative;
+ }
+
+ .cyclling i:after{
+
+     position: absolute;
+     content: 'Cycling';
+     left: -10px;
+     top: 30px;
+     font-size: 20px;
+ }
+
+ .padding-left-right{
+
+    padding-left: 0;
+    padding-right: 0;
+ }
+      
+
+}/*end*/
+
+
+@media (max-width: 767px){
+
+
+
+       .interest-section{
+
+           width: 90%;
+           margin-left: 5%;
+       }
+
+     .interest-body{
+
+        text-align: center;
+        background: #fff;
+         
+     }
+
+     .gaming{
+
+         padding: 30px 50px;
+         background: #06A763;
+
+     }
+     .gaming i{
+
+             font-size: 2.2em;
+             color: #fff;
+             position: relative;
+     }
+   
+     .photography{
+
+         padding: 30px 50px;
+     }
+     .photography i{
+
+         font-size: 2.2em;
+         color: #06A763;
+         position: relative;
+     }
+   
+     .travel{
+
+         padding: 30px 50px;
+         background: #06A763;
+     }
+     .travel i{
+
+             font-size: 2.2em;
+             color: #fff;
+             position: relative;
+     }
+  
+     .cyclling{
+
+         padding: 30px 50px;
+     }
+     .cyclling i{
+
+        font-size: 2.2em;
+        color: #06A763;
+        position: relative;
+     }
+
+  
+
+     .padding-left-right{
+
+        padding-left: 0;
+        padding-right: 0;
+     }
+
+     .padding-left{
+
+        padding-left: 0;
+     }
+      
+
+      .padding-right{
+
+        padding-right: 0;
+      }
+
+}/*end*/
+
+/*======================= =========== //CSS CODE FOR INTEREST SECTION==== ===================*/
+
+
+
+
+/*==================================================================
+CSS CODE FOR CONTACT SECTION START
+====================================================================*/
+
+.contact-title{
+
+    text-align: center;
+}
+.contact-title img{
+
+    height: 50px;
+    width: 50px;
+}
+.contact-title h2{
+
+    color: #757575;
+    font-size: 25px;
+}
+
+
+
+
+
+/*==================================================================
+CSS CODE FOR CONTACT SECTION END
+====================================================================*/
+
+
+/*==================================================================
+CSS CODE FOR CONTACT SECTION END
+====================================================================*/
+
+
+.contact-title{
+
+     padding-bottom: 60px;
+}
+.contact-form{
+
+    background: #fff;
+    margin-bottom: 10%;
+}
+.contact-form form{
+
+    width: 80%;
+   margin-left: 10%;
+    padding: 40px 25px;
+}
+.contact-form label{
+
+
+    color: #757575;
+    font-size: 15px;
+    font-weight: normal;
+}
+.contact-form input[type='text']{
+
+       border: none;
+    outline: 0;
+    border-bottom: 1px solid #dcdcdc;
+    border-radius: 0;
+    width: 100%;
+}
+.contact-form input[type='email']{}
+.contact-form button{
+
+       background: #06A763;
+    border: 0;
+    outline: 0;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 8px 43px;
+    font-size: 20px;
+}
+.contact-form textarea{
+
+
+    border: navajowhite;
+    outline: 0;
+    border-bottom: 1px solid #dcdcdc;
+    width: 100%;
+}
+
+
+
+
+@media (min-width: 1100px){
+
+    .contact-section{
+
+        width: 84%;
+        margin-left: 8%;
+    }
+
+}
+
+@media screen and (max-width: 1099px) and (min-width: 768px) {
+
+
+    .contact-section{
+
+          width: 84%;
+          margin-left: 8%;
+    }
+}
+
+
+@media (max-width: 767px){
+
+    .contact-section{
+
+
+          width: 90%;
+          margin-left: 5%;
+    }
+
+}
+
+/*==================================================================
+CSS CODE FOR FOOTER SECTION START
+====================================================================*/
+
+
+.footer-section{
+
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+.footer-section p{
+
+    color: #757575;
+}
+.footer-section p span{
+  
+
+   color: #1976D2;
+   font-weight: bold;
+
+}
+
+
+
+
+
+
+/*==================================================================
+CSS CODE FOR FOOTER SECTION END
+====================================================================*/
+
+
+
+/*==================================================================
+CSS CODE FOR FOOTER PROTFOLIO SECTION START
+====================================================================*/
+
+.protfolio-section{}
+
+.protfolio-title{
+
+    text-align: center;
+    
+}
+
+.protfolio-title h2{
+
+    font-size: 25px;
+    color: #757575;
+    padding-bottom: 70px;
+    padding-top: 0px;
+}
+
+
+.protfolio-title img{
+
+    height: 50px;
+    width: 50px;
+}
+
+
+.filter-bar{
+    text-align: center;
+    margin-bottom: 20%;
+}
+.filter-bar ul{}
+.filter-bar li{
+
+    list-style: none;
+    float: left;
+    padding: 10px 20px;
+    background: #06A763;
+    margin: 10px 2px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+.filter-bar li:hover{
+
+    background: #fff;
+    color: #757575;
+    transition: .3s;
+}
+
+.single-protfolio{
+
+    margin-bottom: 10%;
+}
+.single-protfolio img{
+
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+}
+.hover{}
+
+
+
+
+@media (min-width: 1100px){
+
+    .protfolio-section{
+
+        width: 84%;
+        margin-left: 8%;
+    }
+
+}
+
+@media screen and (max-width: 1099px) and (min-width: 768px) {
+
+
+    .protfolio-section{
+
+          width: 84%;
+          margin-left: 8%;
+    }
+}
+
+
+@media (max-width: 767px){
+
+    .protfolio-section{
+
+
+          width: 90%;
+          margin-left: 5%;
+    }
+
+}
+
+
+
+@media(min-width: 992px){
+
+
+   .single-protfolio{
+
+        position: relative;
+        overflow: hidden;
+    }
+     
+
+    .visit_web{
+
+            position: absolute;
+            top: -30%;
+            left: 30%;
+    }
+    .visit_web a{
+
+            text-decoration: none;
+            font-size: 18px;
+            background: #06A763;
+            padding: 10px 20px;
+            color: #fff;
+    }
+
+    .single-protfolio:hover .visit_web{
+
+            position: absolute;
+            top: 40%;
+            left: 30%;
+            transition: .3s;
+    }
+
+
+}
+@media screen and (max-width: 991px) and (min-width: 768px){
+    
+         .single-protfolio{
+
+        position: relative;
+        overflow: hidden;
+    }
+     
+
+    .visit_web{
+
+            position: absolute;
+            top: -30%;
+            left: 30%;
+    }
+    .visit_web a{
+
+            text-decoration: none;
+            font-size: 18px;
+            background: #06A763;
+            padding: 10px 20px;
+            color: #fff;
+    }
+
+    .single-protfolio:hover .visit_web{
+
+            position: absolute;
+            top: 40%;
+            left: 30%;
+            transition: .3s;
+    }
+}
+@media(max-width: 767px){
+
+
+        .single-protfolio{
+
+        position: relative;
+        overflow: hidden;
+    }
+     
+
+    .visit_web{
+
+            position: absolute;
+            top: -30%;
+            left: 30%;
+    }
+    .visit_web a{
+
+            text-decoration: none;
+            font-size: 18px;
+            background: #06A763;
+            padding: 10px 20px;
+            color: #fff;
+    }
+
+    .single-protfolio:hover .visit_web{
+
+            position: absolute;
+            top: 42%;
+            left: 32%;
+            transition: .3s;
+    }
+
+}
+
+
+
+/*==================================================================
+CSS CODE FOR FOOTER PROTFOLIO SECTION END
+====================================================================*/
+
+
+/*==================================================================
+CSS CODE FOR LOADING ANIMATION START
+====================================================================*/
+ 
+.loader{
+
+
+     position: absolute;
+     left: 50%;
+     top: 50%;
+     transform: translate(-50%,-50%);
+     width: 40px;
+     height: 40px;
+     box-sizing: border-box;
+     border: 3px solid #000;
+     animation: animate 2s linear infinite;
+     z-index: 99;
+}
+ 
+
+.loader:before{
+
+   content: '';
+   position: absolute;
+   top: 0;
+   left: 0;
+   bottom: 0;
+   right: 0;
+   background: #000;
+    animation: animateBg 2s linear infinite;
+
+}
+ 
+
+
+@keyframes animate
+{
+
+
+      0%
+      {
+         transform: translate(-50%,-50%) rotate(0deg);
+      }
+      25%
+      {
+         transform: translate(-50%,-50%) rotate(180deg);
+      }
+      50%
+      {
+         transform: translate(-50%,-50%) rotate(180deg);
+      }
+      75%
+      {
+         transform: translate(-50%,-50%) rotate(360deg);
+      }
+      100%
+      {
+         transform: translate(-50%,-50%) rotate(360deg);
+      }
+
+}/*end*/
+
+
+@keyframes animateBg
+{
+
+
+      0%
+      {
+         height: 0;
+      }
+      25%
+      {
+          height: 0;
+      }
+      50%
+      {
+        height: 100%;
+      }
+      75%
+      {
+         height: 100%;
+      }
+      100%
+      {
+        height: 0;
+      }
+
+}/*end*/
+ 
+
+
+ 
+
+
+ 
+/*==================================================================
+CSS CODE FOR LOADING ANIMATION END
+====================================================================*/
